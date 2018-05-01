@@ -10,4 +10,14 @@ public class LoginController {
     public String index(){
         return "index";
     }
+
+    @RequestMapping("/tologin")
+    public String toLogin(){
+        return "login";
+    }
+
+    @RequestMapping("/login")
+    public String login(){
+        return "index";
+    }
 }
