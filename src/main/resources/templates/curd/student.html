@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{student.page.title}">学生页面~</title>
+    <!-- 引用csse.js -->
+    <script th:src="@{/webjars/vue/2.5.13/vue.js}"></script>
+    <!-- 引用学生组件 -->
+    <script th:src="@{/vue/components/component_student.js}"></script>
+</head>
+<body>
+<p th:text="#{student.page.title}"></p>
+12
+    <div id="student_component">
+        <student></student>
+    </div>
+    <script>
+        //创建Vue根实例
+        new Vue({
+            el:"#student_component"
+        });
+    </script>
+</body>
+</html>

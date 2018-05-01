@@ -1,0 +1,7 @@
+server:
+  port: 86
+spring:
+  messages:
+    basename: i18n/basic
+  thymeleaf:
+    cache: false
