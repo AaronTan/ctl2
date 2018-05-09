@@ -14,6 +14,7 @@ public class Student {
     @Id
     private int id;
     private String name;
+    private String code;    //学号
     private int gender;     //1:男;2:女
     private int status;     //1:正常
     private Date birthday;
